@@ -1,0 +1,20 @@
+{
+  "name": "mvc-nodejs",
+  "version": "1.0.0",
+  "description": "Processo seletivo",
+  "main": "server.js",
+  "scripts": {
+    "test": "1.0.0",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianyqueiroz/mvc-nodejs.git"
+  },
+  "author": "Mariany Queiroz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marianyqueiroz/mvc-nodejs/issues"
+  },
+  "homepage": "https://github.com/marianyqueiroz/mvc-nodejs#readme"
+}
