@@ -1,15 +1,11 @@
-const mongoose = require("mongoose");
+const express = require("express");
+const router = express.Router();
+const controller = require("../controller/contatosControllers");
 
-const contatosSchema = new mongoose.Schema({
-   name: { type : String },
-   lastName: { type : String },
-   phone: { type : String },
-   email: { type : String },
-   address: { type : String }
-}, {
-    version: false
-});
+router.get("/", controller.getAll);
+router.post("/", controller.postContatos);
+router.get("/:name", controller.getByName);
+router.put("/:name", controller.putContato);
+router.delete("/:name", controller.deleteContato);
 
-const contatos = new mongoose.model("contatos", contatosSchema);
-
-module.exports = contatos;
+module.exports = router;
